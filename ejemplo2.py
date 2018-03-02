@@ -23,8 +23,8 @@ adc=machine.ADC(0)
 #
 # connect the ESP8266 to local wifi network
 #
-yourWifiSSID = "wifimac"
-yourWifiPassword = "nisupu17"
+yourWifiSSID = "Tu_wifi"
+yourWifiPassword = "Tu_passw"
 sta_if = network.WLAN(network.STA_IF)
 sta_if.active(True)
 sta_if.connect(yourWifiSSID, yourWifiPassword)
@@ -40,7 +40,7 @@ print("Connected to wifi")
 myMqttClient = "maperales-mqtt-client"  # can be anything unique
 adafruitIoUrl = "io.adafruit.com" 
 adafruitUsername = "Maperales"  # can be found at "My Account" at adafruit.com
-adafruitAioKey = "61eb15f208704af7af96f23dc5956155"  # can be found by clicking on "VIEW AIO KEYS" when viewing an Adafruit IO Feed
+adafruitAioKey = "Tu_Key"  # can be found by clicking on "VIEW AIO KEYS" when viewing an Adafruit IO Feed
 c = MQTTClient(myMqttClient, adafruitIoUrl, 0, adafruitUsername, adafruitAioKey)
 c.set_callback(sub_cb)
 
