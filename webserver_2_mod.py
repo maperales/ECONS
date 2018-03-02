@@ -58,8 +58,8 @@ adc=machine.ADC(0)
 #
 # Conectar el ESP8266 a la Wifi
 #
-yourWifiSSID = "wifimac"
-yourWifiPassword = "nisupu17"
+yourWifiSSID = "TU_RED"
+yourWifiPassword = "TU_PASSW"
 sta_if = network.WLAN(network.STA_IF)
 sta_if.active(True)
 sta_if.connect(yourWifiSSID, yourWifiPassword)
